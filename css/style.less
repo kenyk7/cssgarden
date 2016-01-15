@@ -1,3 +1,15 @@
+/* icon fonts */
+@font-face {
+	font-family: 'icommom';
+	src:url('icomoom.eot');
+	src:url('icomoom.eot?#iefix') format('embedded-opentype'),
+		url('icomoom.woff') format('woff'),
+		url('icomoom.ttf') format('truetype'),
+		url('icomoom.svg#icomoom') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,600);
 @primary: #3B78E7;
 @second: #1c282e;
@@ -25,19 +37,18 @@ a {
     text-decoration: underline;
   }
   &:visited {
-    color: @second;
+    color: darken(@primary, 30%);
   }
 }
 h1, h2{
   margin: 0;
+  font-weight: 300;
 }
 h1{
-	font-size: 50px;
-	font-weight: 300;
+	font-size: 55px;
 }
 h2{
-	font-size: 25px;
-	font-weight: normal;
+	font-size: 24px;
 }
 h3{
 	font-weight: normal;
@@ -45,4 +56,162 @@ h3{
 p {
   margin: 0.75em 0;
   line-height: 1.4;
+}
+
+// css custom gen
+.shadow{
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+}
+.cover{
+	background-size: cover;
+	background-position: center center;
+}
+.page-wrapper{
+	position: relative;
+}
+
+// .main{
+// 	width: 80%;
+// 	margin: 0 auto;
+// }
+
+// .summary, .preamble{
+// 	width: 80%;
+// 	margin: 0 auto;
+// }
+
+.intro{
+	header{
+		text-align: center;
+		padding: 50px 0 100px;
+		color: #fff;
+		background: @primary;
+		background-image: url(../img/header.jpg);
+		.cover();
+		h2{
+			color: #ececec;
+			position: relative;
+			&:before{
+				content: "";
+				width: 50px;
+				position: absolute;
+				bottom: -15px;
+				left: 50%;
+				margin-left: -25px;
+				border-bottom: 2px solid #ECECEC;
+			}
+		}
+	}
+}
+
+.design-archives{
+	position: absolute;
+	top: 197px;
+	left: 0%;
+	right: 0%;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.4);
+	.shadow();
+	&:hover{
+		background: rgba(0, 0, 0, 0.5);
+	}
+	h3{
+		display: none;
+	}
+	ul{
+		// position: relative;
+		padding: 0;
+		li{
+			list-style: none;
+			display: block;
+			text-align: center;
+			&.next,&.previous{
+				// text-indent: -9999px;
+				a{
+					position: absolute;
+					// width: 30px;
+					top: 0;
+					background: @second;
+					padding: 14px;
+					line-height: 1.38;
+					&:hover{
+						background: darken(@second, 10%);
+					}
+				}
+			}
+			&.previous{
+				a{
+					left: 0;
+					&:before{
+						// content: "<";
+					}
+				}
+				
+			}
+			&.next{
+				a{
+					right: 0;
+				}
+			}
+			&.viewall{
+				text-align: center;
+				text-transform: uppercase;
+			}
+			a{
+				color: #fff;
+				text-decoration: none;
+				&:before{
+					    position: absolute;
+				}
+			}
+		}
+	}
+}
+
+.summary{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 300;
+	padding: 30px 0;
+	color: #fff;
+	background: @primary;
+	position: relative;
+	z-index: 99;
+	.shadow();
+	p{
+		width: 85%;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		&:first-child{
+			margin-bottom: 20px;
+		}
+		a{
+			padding: 2px 8px;
+			padding-left: 35px;
+			color: #fff;
+			background: @second;
+			text-decoration: none;
+			border-radius: 3px;
+			position: relative;
+			text-transform: uppercase;
+			&:hover,&:focus{
+				background: darken(@second, 10%);
+				.shadow();
+			}
+			&:before{
+				content: "D";
+				font-family: "icommom";
+				font-size: 16px;
+				width: 20px;
+				height: 20px;
+				border-radius: 2px;
+				line-height: 1.4;
+				position: absolute;
+				top: 4px;
+				left: 5px;
+				background: rgba(255, 255, 255, 0.2);
+			}
+		}
+	}
 }
