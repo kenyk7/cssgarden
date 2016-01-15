@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,600);
+@primary: #3B78E7;
+@second: #1c282e;
+@gris: #ECECEC;
+@sidebar: #dedede;
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #666;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	background: @gris;
+}
+a {
+  color: @primary;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: darken(@primary, 10%);
+    text-decoration: underline;
+  }
+  &:visited {
+    color: @second;
+  }
+}
+h1, h2{
+  margin: 0;
+}
+h1{
+	font-size: 50px;
+	font-weight: 300;
+}
+h2{
+	font-size: 25px;
+	font-weight: normal;
+}
+h3{
+	font-weight: normal;
+}
+p {
+  margin: 0.75em 0;
+  line-height: 1.4;
+}
