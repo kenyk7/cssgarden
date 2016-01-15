@@ -22,7 +22,7 @@ html,body{
 }
 body{
 	color: #666;
-	font-size: 15px;
+	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	background: @gris;
 }
@@ -52,6 +52,7 @@ h2{
 }
 h3{
 	font-weight: normal;
+	text-transform: uppercase;
 }
 p {
   margin: 0.75em 0;
@@ -60,7 +61,7 @@ p {
 
 // css custom gen
 .shadow{
-	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 .cover{
 	background-size: cover;
@@ -69,16 +70,6 @@ p {
 .page-wrapper{
 	position: relative;
 }
-
-// .main{
-// 	width: 80%;
-// 	margin: 0 auto;
-// }
-
-// .summary, .preamble{
-// 	width: 80%;
-// 	margin: 0 auto;
-// }
 
 .intro{
 	header{
@@ -106,7 +97,7 @@ p {
 
 .design-archives{
 	position: absolute;
-	top: 197px;
+	top: 194px;
 	left: 0%;
 	right: 0%;
 	z-index: 999;
@@ -129,11 +120,11 @@ p {
 				// text-indent: -9999px;
 				a{
 					position: absolute;
-					// width: 30px;
+
 					top: 0;
 					background: @second;
 					padding: 14px;
-					line-height: 1.38;
+					line-height: 1.48;
 					&:hover{
 						background: darken(@second, 10%);
 					}
@@ -142,9 +133,6 @@ p {
 			&.previous{
 				a{
 					left: 0;
-					&:before{
-						// content: "<";
-					}
 				}
 				
 			}
@@ -184,17 +172,19 @@ p {
 		padding-left: 15px;
 		padding-right: 15px;
 		&:first-child{
-			margin-bottom: 20px;
+			margin-bottom: 10px;
+			font-size: 15px;
 		}
 		a{
-			padding: 2px 8px;
-			padding-left: 35px;
+			padding: 5px 8px;
+			padding-left: 30px;
 			color: #fff;
 			background: @second;
 			text-decoration: none;
 			border-radius: 3px;
 			position: relative;
 			text-transform: uppercase;
+			font-size: 16px;
 			&:hover,&:focus{
 				background: darken(@second, 10%);
 				.shadow();
@@ -212,6 +202,314 @@ p {
 				left: 5px;
 				background: rgba(255, 255, 255, 0.2);
 			}
+		}
+	}
+}
+
+
+.preamble{
+	padding: 30px 50px;
+	margin-left: 330px;
+	// height: 400px;
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		bottom: 15px;
+		left: 30px;
+		background: #fff;
+		border-radius: 2px;
+		z-index: -1;
+		.shadow();
+	}
+}
+.zen-resources{
+	width: 300px;
+	// height: 400px;
+	padding: 10px 15px;
+	background: @sidebar;
+	box-shadow: inset -5px 0 15px -6px  rgba(0, 0, 0, 0.3);
+	position: absolute;
+	left: 0;
+	top: 360px;
+	border-radius: 2px;
+	h3{
+		display: none;
+	}
+	ul{
+		padding: 0;
+		li{
+			list-style: none;
+			// padding: 20px 0;
+			// border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			&:first-child{
+				// border-top: 1px solid rgba(0, 0, 0, 0.1);
+			}
+			a{
+				display: block;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-weight: 500;
+				padding: 15px 0px;
+				font-size: 18px;
+				color: #888;
+				&:hover,&:focus{
+					color: @primary;
+				}
+			}
+			
+			&:nth-child(2) a:hover,&:nth-child(2) a:focus{
+				color: #9c27b0;
+			}
+			
+			&:nth-child(3) a:hover,&:nth-child(2) a:focus{
+				color: #e91e63;
+			}
+			&:nth-child(4) a:hover,&:nth-child(2) a:focus{
+				color: #f44336;
+			}
+			&:nth-child(5) a:hover,&:nth-child(2) a:focus{
+				color: #ff5722;
+			}
+		}
+	}
+}
+
+.explanation,.participation{
+	margin-top: 20px;
+	padding: 30px 50px;
+	margin-right: 330px;
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		bottom: 15px;
+		left: 30px;
+		background: #fff;
+		border-radius: 2px;
+		z-index: -1;
+		.shadow();
+	}
+}
+.participation{
+	margin-top: 10px;
+}
+
+.design-selection{
+	width: 300px;
+	padding: 10px 15px;
+	background: @sidebar;
+	box-shadow: inset 5px 0 15px -6px  rgba(0, 0, 0, 0.3);
+	position: absolute;
+	right: 0;
+	top: 665px;
+	border-radius: 2px;
+	h3{
+		// display: none;
+	}
+	ul{
+		padding: 0;
+		li{
+			list-style: none;
+			padding: 12px 15px;
+			a{
+				display: inline-block;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-weight: 500;
+				font-size: 18px;
+				color: @second;
+				&:hover,&:focus{
+					color: @primary;
+				}
+			}
+			.design-name{
+				display: block;
+				color: #888;
+			}
+			.designer-name{
+				text-transform: none;
+			}
+		}
+	}
+}
+
+.benefits{
+	color: #fff;
+	font-weight: 300;
+	margin-top:16px;
+	padding: 50px 15px 60px;
+	background: url(../img/header1.jpg);
+	.cover();
+	.shadow();
+	background: @primary;
+	text-align: center;
+	p{
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+.requirements{
+	padding: 20px 0;
+	width: 85%;
+	margin: 0 auto;
+	p:last-child{
+		margin-top: 30px;
+		text-align: center;
+		font-size: 1.3em;
+	}
+}
+
+
+footer{
+	background: @second;	
+	padding: 30px 15px;
+	text-align: center;
+	box-shadow: -5px 0 15px rgba(0, 0, 0, 0.7);
+	a{
+		display: inline-block;
+		font-size: 18px;
+		text-align: center;
+		padding: 5px 15px;
+		margin-left: 5px;
+		margin-right: 5px;
+		text-decoration: none !important;
+		position: relative;
+		padding-top: 60px;
+		color: #ccc;
+		&:before{
+			font-family: "icommom";
+			font-size: 50px;
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			margin-left: -26px;
+		}
+		&.zen-validate-html:before{
+			content: "5";
+		}
+		&.zen-validate-css:before{
+			content: "3";
+		}
+		&.zen-license:before{
+			content: "c";
+		}
+		&.zen-accessibility:before{
+			content: "a";
+		}
+		&.zen-github:before{
+			content: "g";
+		}
+	}
+}
+
+@media (max-width: 1246px) {
+	.design-selection{
+		top: 705px;
+	}
+}
+@media (max-width: 1040px) {
+	.design-selection{
+		top: 780px;
+		ul li{
+			padding-top: 18px;
+			padding-bottom: 18px;
+		}
+	}
+	.explanation{
+		margin-top: -10px;
+	}
+	.zen-resources{
+		top: 380px;
+	}
+}
+
+@media (max-width: 860px) {
+	.design-selection,.zen-resources{
+		position: relative;
+		top: 0px;
+		width: auto;
+		border-radius: 0;
+		ul{
+			li{
+				width: 40%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+	.zen-resources{
+		background: @second;
+		h3{
+			display: block;
+		}
+		ul{
+			li{
+				padding-left: 20px;
+			}
+		}
+	}
+	.explanation,.participation{
+		margin-right: 0;
+	}
+	.preamble{
+		margin-left: 0;
+	}
+	.participation{
+		margin-top: -10px;
+	}
+}
+@media (max-width: 420px) {
+	.design-selection,.zen-resources{
+		ul{
+			li{
+				width: 95%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	.design-archives{
+		top: 172px;
+		ul li{
+			&.next,&.previous{
+				a{
+					text-indent: -9999px;
+					width: 25px;
+					opacity: 0.7;
+				}
+				&:before{
+					font-family: "icommom";
+					color: #fff;
+					position: absolute;
+					z-index: -1;
+					font-size: 22px;
+					top: 12px;
+				}
+			}
+			&.previous{
+				&:before{
+					content: "<";
+					left: 15px;
+				}
+			}
+			&.next{
+				&:before{
+					content: ">";
+					right: 15px;
+				}
+			}
+
 		}
 	}
 }
