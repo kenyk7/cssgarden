@@ -53,7 +53,7 @@ p {
   line-height: 1.4;
 }
 .shadow {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 .cover {
   background-size: cover;
@@ -91,7 +91,7 @@ p {
   right: 0%;
   z-index: 999;
   background: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 .design-archives:hover {
   background: rgba(0, 0, 0, 0.5);
@@ -145,7 +145,7 @@ p {
   background: #3b78e7;
   position: relative;
   z-index: 99;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 .summary p {
   width: 85%;
@@ -171,7 +171,7 @@ p {
 .summary p a:hover,
 .summary p a:focus {
   background: #090c0e;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 .summary p a:before {
   content: "D";
@@ -201,7 +201,7 @@ p {
   background: #fff;
   border-radius: 2px;
   z-index: -1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 .zen-resources {
   width: 300px;
@@ -269,7 +269,7 @@ p {
   background: #fff;
   border-radius: 2px;
   z-index: -1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 .participation {
   margin-top: 10px;
@@ -318,7 +318,7 @@ p {
   background: url(../img/header1.jpg);
   background-size: cover;
   background-position: center center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   background: #3b78e7;
   text-align: center;
 }
