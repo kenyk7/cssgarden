@@ -62,7 +62,7 @@ p {
 
 // css custom gen
 .shadow{
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .cover{
 	background-size: cover;
@@ -75,7 +75,7 @@ p {
 .intro{
 	header{
 		text-align: center;
-		padding: 50px 0 100px;
+		padding: 50px 0 110px;
 		color: #fff;
 		background: @primary;
 		background-image: url(../img/header.jpg);
@@ -98,7 +98,7 @@ p {
 
 .design-archives{
 	position: absolute;
-	top: 194px;
+	top: 204px;
 	left: 0%;
 	right: 0%;
 	z-index: 999;
@@ -234,7 +234,7 @@ p {
 	box-shadow: inset -5px 0 15px -6px  rgba(0, 0, 0, 0.3);
 	position: absolute;
 	left: 0;
-	top: 360px;
+	top: 370px;
 	border-radius: 2px;
 	h3{
 		display: none;
@@ -307,7 +307,7 @@ p {
 	box-shadow: inset 5px 0 15px -6px  rgba(0, 0, 0, 0.3);
 	position: absolute;
 	right: 0;
-	top: 665px;
+	top: 675px;
 	border-radius: 2px;
 	h3{
 		// display: none;
@@ -410,12 +410,12 @@ footer{
 
 @media (max-width: 1246px) {
 	.design-selection{
-		top: 705px;
+		top: 715px;
 	}
 }
 @media (max-width: 1040px) {
 	.design-selection{
-		top: 780px;
+		top: 790px;
 		ul li{
 			padding-top: 18px;
 			padding-bottom: 18px;
@@ -425,7 +425,7 @@ footer{
 		margin-top: -10px;
 	}
 	.zen-resources{
-		top: 380px;
+		top: 390px;
 	}
 }
 
@@ -456,9 +456,19 @@ footer{
 	}
 	.explanation,.participation{
 		margin-right: 0;
+		padding: 30px 40px;
+		&:before{
+			left: 20px;
+			right: 20px;
+		}
 	}
 	.preamble{
 		margin-left: 0;
+		padding: 30px 40px;
+		&:before{
+			left: 20px;
+			right: 20px;
+		}
 	}
 	.participation{
 		margin-top: -10px;
@@ -481,7 +491,7 @@ footer{
 		font-size: 20px;
 	}
 	.design-archives{
-		top: 172px;
+		top: 182px;
 		ul li{
 			&.next,&.previous{
 				a{
