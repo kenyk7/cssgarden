@@ -61,6 +61,8 @@ p {
 }
 .page-wrapper {
   position: relative;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 .intro header {
   text-align: center;
